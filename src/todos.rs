@@ -33,7 +33,9 @@ pub mod structured {
 
             let mut file = std::fs::File::create(path_name).expect("File creation failed!");
             file.write_all(self.to_json().as_bytes()).expect("File writing failed!");
-            println!("Data successfully written to file!" );
+
+            println!("===========================================================");
+            println!("Data successfully written to file!");
             println!("Please check output file: {}", path_name);
          }
     }
